@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'chekhovskoy';
+  src: url('/path-to/chekhovskoy.woff2') format('woff2'),
+       url('/path-to/chekhovskoy.woff') format('woff'),
+       url('/path-to/chekhovskoy.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'chekhovskoy', sans-serif;
+}

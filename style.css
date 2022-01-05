@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Suranna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap');
+:root{
+    --primary: #fbe850;
+    --secondary: #2e3038;
+    --black: #0a0a0b;
+    --white: #ffffff;
+    --gray: #c3c3c3;
+
+    --pfont: 'chekhovskoy', 'Suranna', serif;
+    --sfont: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'chekhovskoy';
+    src: url('/Assets/fonts/chekhovskoy/chekhovskoy.woff2') format('woff2'),
+         url('/Assets/fonts/chekhovskoy/chekhovskoy.woff') format('woff'),
+         url('/Assets/fonts/chekhovskoy/chekhovskoy.ttf')  format('truetype');
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: var(--pfont);
+    font-size: 62.5%;
+}
+body{
+    background: var(--black);
+    color: var(--white);
+}
+a:hover:not(.primary-btn){
+    color: var(--primary);
+}
+
+
+
+/******************************/
+/********* 1 * Navbar *********/
+/******************************/
+.section-1{
+    margin: 0 8%;
+}
+nav{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: var(--white);
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+nav span:hover{
+    color: var(--primary);
+}
+nav div a{
+    font-size: 1.8rem;
+    margin: 0rem 1rem;
+    font-family: var(--sfont);
+    color: var(--gray);
+    text-decoration: none;
+}
+.primary-btn{
+    color: var(--black);
+    font-size: 2.5rem;
+    text-decoration: none;
+    background: var(--primary);
+    padding: 1.2rem 2rem;
+    font-weight: 500;
+}
+
+/*********** HERO ***********/
+.hero{
+    margin: 6rem 0;
+}
+.heading-1{
+    font-size: 6rem;
+    line-height: 7rem;
+    margin: 1.5rem 0;
+}
+p:not(.heading-1, .heading-2){
+    font-size: 1.8rem;
+    font-family: var(--sfont);
+    color: var(--gray);
+    font-weight: 300;
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+
+/****** Trusted Companies ******/
+.trusted-companies{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-between;
+}
+
+/****** Featured Websites ******/
+.featured-websites{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10rem;
+    justify-content: space-between;
+    margin: 7rem 0;
+}
+.featured-websites img{
+    margin-bottom: 2rem;
+}
+.heading-2{
+    font-size: 4rem;
+    line-height: 5rem;
+    margin: 1rem 0;
+}
+
+
+
+/******************************/
+/********** 2 * Intro *********/
+/******************************/
+.introduction{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10rem;
+    justify-content: space-between;
+    background: var(--secondary);
+    padding: 5% 8%;
+}
+
+
+/******************************/
+/****** 3 * Work with me ******/
+/******************************/
+.work-with-me{
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-column-gap: 5rem;
+    justify-content: space-between;
+    padding: 5% 8%;
+}
+.work-with-me p:nth-child(2){
+    margin-bottom: 4rem;
+}
+
+
+/******************************/
+/********* 4 * Footer *********/
+/******************************/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--secondary);
+    padding: .3% 8%;
+}
+.footer div:nth-child(2) a{
+    color: var(--white);
+}
+.footer div:nth-child(3) i{
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: var(--white);
+}
